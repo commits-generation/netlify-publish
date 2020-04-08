@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="commit-generation-datasets", # Replace with your own username
+    name="commit_generation_datasets", # Replace with your own username
     version="0.0.1",
     author="Wassim Benzarti",
     author_email="m.wassim.benzarti@gmail.com",
