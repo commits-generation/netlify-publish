@@ -25,3 +25,6 @@ jobs:
     - name: Test with pytest
       run: |
         ./publish.sh
+      env:
+        TWINE_USERNAME : __token__
+        TWINE_PASSWORD: ${{secrets.pypi_token}}
