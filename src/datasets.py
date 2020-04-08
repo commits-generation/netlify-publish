@@ -1,7 +1,7 @@
 import pandas as pd
 from enum import Enum
 import requests
-from io import StringIO
+from io import BytesIO
 
 # Remove the pandas' limit to display the whole column if it's long
 pd.set_option('max_colwidth', 1)
@@ -25,5 +25,5 @@ class tables(Enum):
 def load_dataset(table):
     url = f"https://drive.google.com/u/0/uc?id={table.value}&export=download"
     file = requests.get(url).content
-    dataset = pd.read_csv(StringIO(file))
+    dataset = pd.read_csv(BytesIO(file))
     return dataset
