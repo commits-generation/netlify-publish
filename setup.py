@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="commit_generation_datasets", # Replace with your own username
-    version="0.0.4",
+    version="0.0.5",
     author="Wassim Benzarti",
     author_email="m.wassim.benzarti@gmail.com",
     description="Dataset downloader for the commits generation project",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/commits-generation/commits-datasets",
+    url="https://github.com/commits-generation/commit-generation-datasets",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
