@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="netlify_publish", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Wassim Benzarti",
     author_email="m.wassim.benzarti@gmail.com",
     description="Publish to netlify",
