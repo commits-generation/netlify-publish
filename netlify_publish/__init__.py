@@ -1,1 +1,1 @@
-
+from .publish import deploy

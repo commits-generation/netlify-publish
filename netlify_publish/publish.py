@@ -8,7 +8,7 @@ def deploy(path, domain, personal_access_token, temp_zip_path="/tmp/site.zip"):
 		for file in glob.glob(path):
 			z.write(file)
 	with open(temp_zip_path, "rb") as f:
-		response = post(f"https://api.netlify.com/api/v1/sites/{domain}/deploys?access_token={token}",
+		response = post(f"https://api.netlify.com/api/v1/sites/{domain}/deploys?access_token={personal_access_token}",
 		headers={
 			"Content-Type":"application/zip"
 		},
