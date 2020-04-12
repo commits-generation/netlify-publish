@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="commit_generation_datasets", # Replace with your own username
-    version="0.0.5",
+    name="netlify_publish", # Replace with your own username
+    version="0.0.1",
     author="Wassim Benzarti",
     author_email="m.wassim.benzarti@gmail.com",
-    description="Dataset downloader for the commits generation project",
+    description="Publish to netlify",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/commits-generation/commit-generation-datasets",
+    url="https://github.com/commits-generation/netlify-publish",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
